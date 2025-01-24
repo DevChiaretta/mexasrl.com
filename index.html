@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centro Wellness</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="hero">
+        <video autoplay muted loop playsinline class="hero-video">
+          <source src="video/herovideo.mp4" type="video/mp4">
+          Il tuo browser non supporta i video HTML5.
+        </video>
+        <div class="hero-overlay">
+          <h1>Benvenuti a Wylie:</h1>
+          <p> dedicare tempo a te stesso non è un lusso, ma un investimento per la tua felicità e la tua salute</p>
+          <a href="#spa" class="cta-button">Scopri di più</a>
+        </div>
+      </header>
+
+  <!-- Area Spa -->
+  <section id="spa" class="spa">
+    <h2>La nostra SPA</h2>
+    <div class="spa-container">
+      <!-- Piscina Idromassaggio -->
+      <div class="spa-item">
+        <img src="image/pool.png" alt="Piscina Idromassaggio">
+        <h3>Piscina Idromassaggio</h3>
+        <a href="#prenotazione" class="cta-button">Prenota Ora</a>
+      </div>
+      <!-- Sauna -->
+      <div class="spa-item">
+        <img src="image/sauna.png" alt="Sauna">
+        <h3>Sauna</h3>
+        <a href="#prenotazione" class="cta-button">Prenota Ora</a>
+      </div>
+      <!-- Bagno Turco -->
+      <div class="spa-item">
+        <img src="image/bagnoturco.jpg" alt="Bagno Turco">
+        <h3>Bagno Turco</h3>
+        <a href="#prenotazione" class="cta-button">Prenota Ora</a>
+      </div>
+    </div>
+  </section>
+  
+      
+<!-- Blog -->
+  <section id="blog" class="blog">
+    <h2>Articoli sul Benessere</h2>
+    <div class="blog-container">
+      <div class="blog-item">
+        <img src="image\cellulite.jpg" alt="Articolo 1">
+        <h3>Consigli per una pelle sana</h3>
+      </div>
+      <div class="blog-item">
+        <img src="image/cura.jpg" alt="Articolo 2">
+        <h3>Massaggi rilassanti</h3>
+      </div>
+      <div class="blog-item">
+        <img src="image\Equilibrio.jpg" alt="Articolo 3">
+        <h3>Prendersi Tempo</h3>
+      </div>
+      <div class="blog-item">
+        <img src="image\vegan.jpg" alt="Articolo 4">
+        <h3>Dieta e benessere</h3>
+      </div>
+    </div>
+  </section>
+
+<!--mini e-commerce-->
+<section id="prodotti" class="products">
+  <h2>I nostri prodotti</h2>
+  <div class="products-container">
+    <!-- Prodotto 1 -->
+    <div class="product-item">
+      <img src="image/crema-anticellulite.jpg" alt="Crema Anticellulite">
+      <h3>Crema Anticellulite</h3>
+      <p>Rimodella e tonifica la tua pelle.</p>
+      <p><strong>€20</strong></p>
+      <button data-id="1" class="add-to-cart">Acquista</button>
+    </div>
+    <!-- Prodotto 2 -->
+    <div class="product-item">
+      <img src="image/crema-anti-age.jpg" alt="Crema Anti Age">
+      <h3>Crema Anti Age</h3>
+      <p>Ridona giovinezza al tuo viso.</p>
+      <p><strong>€25</strong></p>
+      <button data-id="2" class="add-to-cart">Acquista</button>
+    </div>
+    <!-- Prodotto 3 -->
+    <div class="product-item">
+      <img src="image/bendaggi-anticellulite.jpg" alt="Bendaggi Anticellulite">
+      <h3>Bendaggi Anticellulite</h3>
+      <p>Per un trattamento completo.</p>
+      <p><strong>€30</strong></p>
+      <button data-id="3" class="add-to-cart">Acquista</button>
+    </div>
+    <!-- Prodotto 4 -->
+    <div class="product-item">
+      <img src="image/tisana-detox.jpg" alt="Tisana Drenante">
+      <h3>Tisana Drenante</h3>
+      <p>Favorisce l'eliminazione dei liquidi.</p>
+      <p><strong>€15</strong></p>
+      <button data-id="4" class="add-to-cart">Acquista</button>
+    </div>
+  </div>
+</section>
+<script src="cart.js"></script>
+
+
+  
+
+<!-- prenotazioni -->
+<section id="prenotazione" class="booking">
+    <div class="booking-container">
+      <h2>Prenota il tuo Trattamento</h2>
+      <p>Compila il modulo per riservare il tuo momento di benessere.</p>
+      <form class="booking-form">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required>
+  
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required>
+  
+        <label for="trattamento">Seleziona Trattamento:</label>
+        <select id="trattamento" name="trattamento" required>
+          <option value="" disabled selected>-- Scegli un'opzione --</option>
+          <option value="massaggio-relax">Massaggio Relax</option>
+          <option value="sauna">Sauna</option>
+          <option value="bagno-turco">Bagno Turco</option>
+          <option value="aromaterapia">Aromaterapia</option>
+        </select>
+  
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data" required>
+  
+        <label for="ora">Ora:</label>
+        <input type="time" id="ora" name="ora" required>
+  
+        <button type="submit">Prenota Ora</button>
+      </form>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Centro Wellness - Tutti i diritti riservati &copy; 2025</p>
+  </footer>
+
+ <script src="script.js"></script> 
+ 
+
+</body>
+</html>
