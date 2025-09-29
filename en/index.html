@@ -29,7 +29,7 @@
   <section class="hero" role="banner">
     <div class="container">
       <h1>Innovation & Industrial Automation</h1>
-      <a class="cta" href="https://wa.me/393298972155" target="_blank" rel="noopener">Request a consultation</a>
+      <a class="cta" href="https://wa.me/393206438978" target="_blank" rel="noopener">Request a consultation</a>
     </div>
   </section>
 
@@ -39,7 +39,7 @@
   <section class="intro">
     <div class="container">
       <p class="intro-text">
-        Mexa Srl specializes in <strong>industrial automation and software development</strong>, based in Modena.
+        Mexa Srl specializes in <strong>industrial automation and software development</strong>, based in Formigine, Italy.
         We provide tailored solutions to optimize processes and machinery.
       </p>
     </div>
@@ -129,69 +129,85 @@
 
   <div class="spacer" aria-hidden="true"></div>
 
-  <!-- Key Figures -->
-  <section id="figures" class="stats-section">
-    <div class="container">
-      <h2 class="section-title">Key Figures</h2>
-      <p class="section-subtitle">Some metrics that showcase our work.</p>
+      <!-- Numeri chiave -->
+   <section id="numeri" class="stats-section">
+  <div class="container">
+    <h2 class="section-title">Key figures</h2>
+    <p class="section-subtitle">Some metrics that illustrate our work..</p>
 
-      <div class="stats-grid">
-        <article class="stat">
-          <i class="fas fa-calendar-check stat-ico" aria-hidden="true"></i>
-          <div class="stat-value" data-target="5">0</div>
-          <div class="stat-label">Years of experience</div>
-        </article>
+    <div class="stats-grid">
+      <article class="stat">
+        <i class="fas fa-calendar-check stat-ico" aria-hidden="true"></i>
+        <div class="stat-value" id="anni-esperienza" data-target="20">0</div>
+        <div class="stat-label">Years of experience</div>
+      </article>
 
-        <article class="stat">
-          <i class="fas fa-industry stat-ico" aria-hidden="true"></i>
-          <div class="stat-value" data-target="50">0</div>
-          <div class="stat-label">Plants delivered</div>
-        </article>
+      <article class="stat">
+        <i class="fas fa-industry stat-ico" aria-hidden="true"></i>
+        <div class="stat-value" data-target="18">0</div>
+        <div class="stat-label">Plants constructed</div>
+      </article>
 
-        <article class="stat">
-          <i class="fas fa-microchip stat-ico" aria-hidden="true"></i>
-          <div class="stat-value" data-target="118">0</div>
-          <div class="stat-label">Software projects</div>
-        </article>
+      <article class="stat">
+        <i class="fas fa-microchip stat-ico" aria-hidden="true"></i>
+        <div class="stat-value" data-target="346">0</div>
+        <div class="stat-label">Electrical and software projects</div>
+      </article>
 
-        <article class="stat">
-          <i class="fas fa-headset stat-ico" aria-hidden="true"></i>
-          <div class="stat-value" data-target="269">0</div>
-          <div class="stat-label">Tickets handled in 2025</div>
-        </article>
-      </div>
-    </div>
+     <!-- <article class="stat"> 
+        <i class="fas fa-headset stat-ico" aria-hidden="true"></i>
+        <div class="stat-value" data-target="269">0</div>
+        <div class="stat-label">Ticket gestiti nel 2025</div>
+      </article>
+    </div>-->
+  </div>
+</section>
 
-    <!-- counters -->
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        const counters = document.querySelectorAll(".stat-value");
-        const animate = (el) => {
-          const target = +el.dataset.target;
-          let val = 0;
-          const step = Math.max(1, Math.floor(target / 60));
-          const tick = () => {
-            val += step;
-            if (val >= target) { el.textContent = target; return; }
-            el.textContent = val;
-            requestAnimationFrame(tick);
-          };
-          tick();
-        };
-        const section = document.querySelector("#figures");
-        const io = new IntersectionObserver((entries, obs) => {
-          entries.forEach(e => {
-            if (e.isIntersecting) {
-              counters.forEach(animate);
-              obs.unobserve(e.target);
-            }
-          });
-        }, { threshold: 0.3 });
-        if (section) io.observe(section);
-      });
-    </script>
-  </section>
+    <script>    
+   document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".stat-value");
+  const speed = 60; // più basso = più veloce
 
+  const animateCounter = (counter) => {
+    const target = +counter.getAttribute("data-target");
+    let count = 0;
+    const step = Math.max(1, Math.floor(target / speed));
+
+    const update = () => {
+      count += step;
+      if (count >= target) {
+        if (counter.id === "anni-esperienza") {
+          counter.textContent = "+" + target;
+        } else {
+          counter.textContent = target;
+        }
+      } else {
+        if (counter.id === "anni-esperienza") {
+          counter.textContent = "+" + count;
+        } else {
+          counter.textContent = count;
+        }
+        requestAnimationFrame(update);
+      }
+    };
+    update();
+  };
+
+  const section = document.querySelector("#numeri");
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        counters.forEach(counter => animateCounter(counter));
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  if (section) observer.observe(section);
+});
+</script>
+        
+    </section>
   <div class="spacer" aria-hidden="true"></div>
 
   <!-- Tecnologie -->
@@ -203,39 +219,66 @@
 
     <div class="tech-grid">
       <div class="tech-item">
-        <img src="/1.webp" alt="Logo Siemens">
+        <img src="/6.webp" alt="Logo Siemens - Mexa Srl uses third-party technologies, without 
+      this implying any official affiliation or partnership with the respective brands.">
         <span>PLC Siemens S7-1200/1500</span>
       </div>
 
       <div class="tech-item">
-        <img src="/2.webp" alt="Logo TIA Portal">
+        <img src="/9.webp" alt="Logo TIA Portal - Mexa Srl uses third-party technologies, without 
+      this implying any official affiliation or partnership with the respective brands.">
         <span>TIA Portal V14-V20</span>
       </div>
 
       <div class="tech-item">
-        <img src="/3.webp" alt="HMI">
-        <span>HMI & SCADA<br></span><br>
+        <img src="/1.webp" alt="HMI - Mexa Srl uses third-party technologies, without 
+      this implying any official affiliation or partnership with the respective brands.">
+        <span><br>HMI & SCADA</span><br>
        
       </div>
       <div class="tech-item">
-        <img src="/4.webp" alt="Logo C Sharp">
-        <span>C#<br></span><br> 
+        <img src="/2.webp" alt="Logo C Sharp - Mexa Srl uses third-party technologies, without 
+      this implying any official affiliation or partnership with the respective brands.">
+         <span><br>C#</span><br> 
       </div>
 
       <div class="tech-item">
-        <img src="/ux.webp" alt="Logo Unity">
+        <img src="/UX.png" alt="Logo ux">
         <span>UI/UX interfaces</span>
       </div>
-      <!-- Web & Cloud -->
+ 
       <div class="tech-item">
-        <img src="/cloud.webp" alt="Logo cloud computing">
+        <img src="/8.webp" alt="Logo cloud computing">
         <span>Web & Cloud Integration</span>
+      </div>
+
+      
+      <div class="tech-item">
+        <img src="/3.webp" alt="Logo Spac - Mexa Srl uses third-party technologies, without 
+      this implying any official affiliation or partnership with the respective brands.">
+        <span>Spac Automation</span>
+      </div>
+  
+      <div class="tech-item">
+        <img src="/7.webp" alt="Logo Omron & CX Program - Mexa Srl uses third-party technologies, without 
+      this implying any official affiliation or partnership with the respective brands.">
+        <span>Omron & CX Program</span>
+      </div>
+
+      <div class="tech-item">
+        <img src="/4.webp" alt="Logo Eplan - Mexa Srl uses third-party technologies, without 
+      this implying any official affiliation or partnership with the respective brands.">
+        <span>Eplan</span>
+      </div>
+
+      <div class="tech-item">
+        <img src="/5.webp" alt="Logo Codesys - Mexa Srl uses third-party technologies, without 
+      this implying any official affiliation or partnership with the respective brands.">
+        <span>Codesys</span>
       </div>
     </div>
   </div>
 </section>
-
-
   <div class="spacer" aria-hidden="true"></div>
 
   <!-- Contacts (new: two cards with buttons) -->
@@ -259,11 +302,11 @@
             <a href="mailto:info@mexasrl.com" class="btn" aria-label="Send an email to Mexa">
               ✉️ Email
             </a>
-            <a href="https://wa.me/393298972155" class="btn" target="_blank" rel="noopener"
+            <a href="https://wa.me/393286438978" class="btn" target="_blank" rel="noopener"
                aria-label="Chat on WhatsApp with Mexa">
               💬 WhatsApp
             </a>
-            <a href="tel:+390598302654" class="btn" aria-label="Call Mexa at +39 059 8302654">
+            <a href="tel:+393286438978" class="btn" aria-label="Call Mexa at +393286438978">
               📞 Call
             </a>
           </div>
@@ -274,7 +317,7 @@
           <h3 id="contact-info-title">Our contacts</h3>
 
           <p><strong>Email:</strong> <a href="mailto:info@mexasrl.com">info@mexasrl.com</a></p>
-          <p><strong>Phone:</strong> <a href="tel:+390598302654">+39 059 8302654</a></p>
+          <p><strong>Phone:</strong> <a href="tel:+393286438978">+39 3286438978</a></p>
           <p><strong>Opening hours:</strong> Mon–Fri: 8:30–17:30</p>
           <p><strong>Address:</strong><br>Street Per Sassuolo 70/D<br>41043 Formigine (MO), Italy</p>
 

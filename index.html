@@ -29,7 +29,7 @@
     <section class="hero" role="banner">
         <div class="container">
             <h1>Innovazione & Automazione Industriale</h1>
-            <a class="cta" href="https://wa.me/3298972155" target="_blank" rel="noopener">Richiedi una consulenza</a>
+            <a class="cta" href="https://wa.me/393206438978" target="_blank" rel="noopener">Richiedi una consulenza</a>
         </div>
     </section>
 
@@ -40,7 +40,7 @@
         <div class="container">
             <p class="intro-text">
                 Mexa Srl è specializzata in <strong>progetti elettrici</strong> e <strong> sviluppo software per automazione industriale</strong>,
-                con sede a Modena. Offriamo soluzioni su misura per ottimizzare processi e macchinari.
+                con sede a Formigine. Offriamo soluzioni su misura per ottimizzare processi e macchinari.
             </p>
         </div>
     </section>
@@ -120,7 +120,7 @@
                 <p> Mexa nasce da oltre <strong>20 anni di esperienza</strong> nel settore
                     dell’<strong>automazione industriale</strong>, con l’obiettivo di fornire <strong>soluzioni personalizzate</strong>
                     e di qualità. </p>
-                <p> Supportiamo aziende strutturate integrando competenze in <strong>quadri elettrici</strong>, <strong>cablatura impianti</strong>, 
+                <p> Supportiamo aziende strutturate integrando competenze in <strong>quadri elettrici</strong>, <strong>cablaggio impianti</strong>, 
                     <strong>programmazione PLC</strong> e <strong>sviluppo software su PC</strong>.</p>
                 <p>Il nostro approccio si basa su <strong>relazioni solide e durature</strong>, orientate a risultati concreti e alla piena soddisfazione del cliente.</p>
             </div>
@@ -133,40 +133,41 @@
     <div class="spacer" aria-hidden="true"></div>
 
     <!-- Numeri chiave -->
-    <section id="numeri" class="stats-section">
-        <div class="container">
-            <h2 class="section-title">Numeri chiave</h2>
-            <p class="section-subtitle">Alcune metriche che raccontano il nostro lavoro.</p>
+   <section id="numeri" class="stats-section">
+  <div class="container">
+    <h2 class="section-title">Numeri chiave</h2>
+    <p class="section-subtitle">Alcune metriche che raccontano il nostro lavoro.</p>
 
-            <div class="stats-grid">
-                <article class="stat">
-                    <i class="fas fa-calendar-check stat-ico" aria-hidden="true"></i>
-                    <div class="stat-value" data-target="5">0</div>
-                    <div class="stat-label">Anni di esperienza</div>
-                </article>
+    <div class="stats-grid">
+      <article class="stat">
+        <i class="fas fa-calendar-check stat-ico" aria-hidden="true"></i>
+        <div class="stat-value" id="anni-esperienza" data-target="20">0</div>
+        <div class="stat-label">Anni di esperienza</div>
+      </article>
 
-                <article class="stat">
-                    <i class="fas fa-industry stat-ico" aria-hidden="true"></i>
-                    <div class="stat-value" data-target="50">0</div>
-                    <div class="stat-label">Impianti realizzati</div>
-                </article>
+      <article class="stat">
+        <i class="fas fa-industry stat-ico" aria-hidden="true"></i>
+        <div class="stat-value" data-target="18">0</div>
+        <div class="stat-label">Impianti realizzati</div>
+      </article>
 
-                <article class="stat">
-                    <i class="fas fa-microchip stat-ico" aria-hidden="true"></i>
-                    <div class="stat-value" data-target="118">0</div>
-                    <div class="stat-label">Progetti software</div>
-                </article>
+      <article class="stat">
+        <i class="fas fa-microchip stat-ico" aria-hidden="true"></i>
+        <div class="stat-value" data-target="346">0</div>
+        <div class="stat-label">Progetti elettrici e software</div>
+      </article>
 
-                <article class="stat">
-                    <i class="fas fa-headset stat-ico" aria-hidden="true"></i>
-                    <div class="stat-value" data-target="269">0</div>
-                    <div class="stat-label">Ticket gestiti nel 2025</div>
-                </article>
-            </div>
-        </div>
-        
-        <script>
-document.addEventListener("DOMContentLoaded", () => {
+     <!-- <article class="stat">
+        <i class="fas fa-headset stat-ico" aria-hidden="true"></i>
+        <div class="stat-value" data-target="269">0</div>
+        <div class="stat-label">Ticket gestiti nel 2025</div>
+      </article>
+    </div>-->
+  </div> 
+</section>
+
+    <script>    
+   document.addEventListener("DOMContentLoaded", () => {
   const counters = document.querySelectorAll(".stat-value");
   const speed = 60; // più basso = più veloce
 
@@ -178,16 +179,23 @@ document.addEventListener("DOMContentLoaded", () => {
     const update = () => {
       count += step;
       if (count >= target) {
-        counter.textContent = target;
+        if (counter.id === "anni-esperienza") {
+          counter.textContent = "+" + target;
+        } else {
+          counter.textContent = target;
+        }
       } else {
-        counter.textContent = count;
+        if (counter.id === "anni-esperienza") {
+          counter.textContent = "+" + count;
+        } else {
+          counter.textContent = count;
+        }
         requestAnimationFrame(update);
       }
     };
     update();
   };
 
-  // IntersectionObserver per avviare l'animazione solo quando la sezione è visibile
   const section = document.querySelector("#numeri");
   const observer = new IntersectionObserver((entries, obs) => {
     entries.forEach(entry => {
@@ -201,11 +209,9 @@ document.addEventListener("DOMContentLoaded", () => {
   if (section) observer.observe(section);
 });
 </script>
-
         
-    </section>
-
-    <div class="spacer" aria-hidden="true"></div>
+    
+ <div class="spacer" aria-hidden="true"></div>
 
    <!-- Tecnologie -->
 <section id="tecnologie" class="tech-section">
@@ -214,36 +220,67 @@ document.addEventListener("DOMContentLoaded", () => {
     <p class="section-subtitle">Utilizziamo strumenti e piattaforme leader in automazione e sviluppo software.</p>
 
     <div class="tech-grid">
+
       <div class="tech-item">
-        <img src="/1.webp" alt="Logo Siemens">
+        <img src="/6.webp" alt="Logo Siemens - Mexa Srl utilizza tecnologie di terze parti, senza che 
+      questo implichi alcuna affiliazione o partnership ufficiale con i rispettivi brand">
         <span>PLC Siemens S7-1200/1500</span>
       </div>
+
       <div class="tech-item">
-        <img src="/2.webp" alt="Logo TIA Portal">
+        <img src="/9.webp" alt="Logo TIA Portal - Mexa Srl utilizza tecnologie di terze parti, senza che 
+      questo implichi alcuna affiliazione o partnership ufficiale con i rispettivi brand">
         <span>TIA Portal V14-V20</span>
       </div>
+
       <div class="tech-item">
-        <img src="/3.webp" alt="HMI">
-        <span>HMI & SCADA<br></span><br>
+        <img src="/1.webp" alt="logo weintek - Mexa Srl utilizza tecnologie di terze parti, senza che 
+      questo implichi alcuna affiliazione o partnership ufficiale con i rispettivi brand">
+        <span><br>HMI & SCADA</span><br>
        
       </div>
       <div class="tech-item">
-        <img src="/4.webp" alt="Logo C Sharp">
-        <span>C#<br></span><br> 
+        <img src="/2.webp" alt="Logo C Sharp - Mexa Srl utilizza tecnologie di terze parti, senza che 
+      questo implichi alcuna affiliazione o partnership ufficiale con i rispettivi brand">
+         <span><br>C#</span><br>
       </div>
+
       <div class="tech-item">
-        <img src="/ux.webp" alt="Logo Unity">
+        <img src="/UX.png" alt="Logo UX -">
         <span>UI/UX interfaces</span>
       </div>
-      <!-- web-cloud -->
+     
       <div class="tech-item">
-        <img src="/cloud.webp" alt="Logo cloud computing">
+        <img src="/8.webp" alt="Logo cloud computing">
         <span>Web & Cloud Integration</span>
+      </div>
+
+      <div class="tech-item">
+        <img src="/3.webp" alt="Logo Spac - Mexa Srl utilizza tecnologie di terze parti, senza che 
+      questo implichi alcuna affiliazione o partnership ufficiale con i rispettivi brand">
+        <span>Spac Automazione</span>
+      </div>
+
+      <div class="tech-item">
+        <img src="/7.webp" alt="Logo Omron - Mexa Srl utilizza tecnologie di terze parti, senza che 
+      questo implichi alcuna affiliazione o partnership ufficiale con i rispettivi brand">
+        <span>Omron & CX Program</span>
+      </div>
+
+      <div class="tech-item">
+        <img src="/4.webp" alt="Logo Eplan - Mexa Srl utilizza tecnologie di terze parti, senza che 
+      questo implichi alcuna affiliazione o partnership ufficiale con i rispettivi brand">
+        <span>Eplan</span>
+      </div>
+
+      <div class="tech-item">
+        <img src="/5.webp" alt="Logo Codesys -Mexa Srl utilizza tecnologie di terze parti, senza che 
+      questo implichi alcuna affiliazione o partnership ufficiale con i rispettivi brand">
+        <span>Codesys</span>
       </div>
     </div>
   </div>
 </section>
-
     <div class="spacer" aria-hidden="true"></div>
 
 <!-- Sezione Contatti -->
@@ -269,11 +306,11 @@ document.addEventListener("DOMContentLoaded", () => {
       <a href="mailto:info@mexasrl.com" class="btn" aria-label="Scrivi una email a Mexa">
         ✉️ Email
       </a>
-      <a href="https://wa.me/393298972155" class="btn" target="_blank" rel="noopener"
+      <a href="https://wa.me/393206438978" class="btn" target="_blank" rel="noopener"
          aria-label="Chat WhatsApp con Mexa">
         💬 WhatsApp
       </a>
-      <a href="tel:+390598302654" class="btn" aria-label="Chiama Mexa al numero 059 8302654">
+      <a href="tel:+393286438978" class="btn" aria-label="Chiama Mexa al numero +393286438978">
         📞 Telefono
       </a>
     </div>
@@ -284,7 +321,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <h3 id="info-title">I nostri contatti</h3>
 
     <p><strong>Email:</strong> <a href="mailto:info@mexasrl.com">info@mexasrl.com</a></p>
-    <p><strong>Telefono:</strong> <a href="tel:+390598302654">+39 059 8302654</a></p>
+    <p><strong>Telefono:</strong> <a href="tel:+393286438978">+39 393286438978</a></p>
     <p><strong>Orari di apertura:</strong> Lun–Ven: 8:30–17:30</p>
     <p><strong>Ci trovi a:</strong><br>Via per Sassuolo 70/D<br>41043 Formigine (MO), Italia</p>
 
