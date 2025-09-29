@@ -1,158 +1,375 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="it">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Centro Wellness</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mexa Srl — Automazione Industriale & Software</title>
+    <meta name="description" content="Mexa Srl: soluzioni di automazione industriale, software su misura e assistenza tecnica.">
+    <link rel="alternate" hreflang="it" href="https://mexa.com/">
+    <link rel="alternate" hreflang="en" href="https://mexa.it/en/">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-    
-    <header class="hero">
-        <video autoplay muted loop playsinline class="hero-video">
-          <source src="video/herovideo.mp4" type="video/mp4">
-          Il tuo browser non supporta i video HTML5.
-        </video>
-        <div class="hero-overlay">
-          <h1>Benvenuti a Wylie:</h1>
-          <p> dedicare tempo a te stesso non è un lusso, ma un investimento per la tua felicità e la tua salute</p>
-          <a href="#spa" class="cta-button">Scopri di più</a>
+    <header class="header">
+  <div class="container header-inner">
+    <div class="brand">
+      <a href="/">
+        <img src="/mexalogo.png" alt="Mexa Srl" class="logo">
+      </a>
+    </div>
+    <nav class="lang" aria-label="Lingua">
+      <a href="/">IT</a> | <a href="/en/">EN</a>
+    </nav>
+  </div>
+</header>
+
+    <section class="hero" role="banner">
+        <div class="container">
+            <h1>Innovazione & Automazione Industriale</h1>
+            <a class="cta" href="https://wa.me/3298972155" target="_blank" rel="noopener">Richiedi una consulenza</a>
         </div>
-      </header>
+    </section>
 
-  <!-- Area Spa -->
-  <section id="spa" class="spa">
-    <h2>La nostra SPA</h2>
-    <div class="spa-container">
-      <!-- Piscina Idromassaggio -->
-      <div class="spa-item">
-        <img src="image/pool.png" alt="Piscina Idromassaggio">
-        <h3>Piscina Idromassaggio</h3>
-        <a href="#prenotazione" class="cta-button">Prenota Ora</a>
-      </div>
-      <!-- Sauna -->
-      <div class="spa-item">
-        <img src="image/sauna.png" alt="Sauna">
-        <h3>Sauna</h3>
-        <a href="#prenotazione" class="cta-button">Prenota Ora</a>
-      </div>
-      <!-- Bagno Turco -->
-      <div class="spa-item">
-        <img src="image/bagnoturco.jpg" alt="Bagno Turco">
-        <h3>Bagno Turco</h3>
-        <a href="#prenotazione" class="cta-button">Prenota Ora</a>
-      </div>
-    </div>
-  </section>
-  
-      
-<!-- Blog -->
-  <section id="blog" class="blog">
-    <h2>Articoli sul Benessere</h2>
-    <div class="blog-container">
-      <div class="blog-item">
-        <img src="image\cellulite.jpg" alt="Articolo 1">
-        <h3>Consigli per una pelle sana</h3>
-      </div>
-      <div class="blog-item">
-        <img src="image/cura.jpg" alt="Articolo 2">
-        <h3>Massaggi rilassanti</h3>
-      </div>
-      <div class="blog-item">
-        <img src="image\Equilibrio.jpg" alt="Articolo 3">
-        <h3>Prendersi Tempo</h3>
-      </div>
-      <div class="blog-item">
-        <img src="image\vegan.jpg" alt="Articolo 4">
-        <h3>Dieta e benessere</h3>
-      </div>
-    </div>
-  </section>
+    <div class="spacer" aria-hidden="true"></div>
 
-<!--mini e-commerce-->
-<section id="prodotti" class="products">
-  <h2>I nostri prodotti</h2>
-  <div class="products-container">
-    <!-- Prodotto 1 -->
-    <div class="product-item">
-      <img src="image/crema-anticellulite.jpg" alt="Crema Anticellulite">
-      <h3>Crema Anticellulite</h3>
-      <p>Rimodella e tonifica la tua pelle.</p>
-      <p><strong>€20</strong></p>
-      <button data-id="1" class="add-to-cart">Acquista</button>
-    </div>
-    <!-- Prodotto 2 -->
-    <div class="product-item">
-      <img src="image/crema-anti-age.jpg" alt="Crema Anti Age">
-      <h3>Crema Anti Age</h3>
-      <p>Ridona giovinezza al tuo viso.</p>
-      <p><strong>€25</strong></p>
-      <button data-id="2" class="add-to-cart">Acquista</button>
-    </div>
-    <!-- Prodotto 3 -->
-    <div class="product-item">
-      <img src="image/bendaggi-anticellulite.jpg" alt="Bendaggi Anticellulite">
-      <h3>Bendaggi Anticellulite</h3>
-      <p>Per un trattamento completo.</p>
-      <p><strong>€30</strong></p>
-      <button data-id="3" class="add-to-cart">Acquista</button>
-    </div>
-    <!-- Prodotto 4 -->
-    <div class="product-item">
-      <img src="image/tisana-detox.jpg" alt="Tisana Drenante">
-      <h3>Tisana Drenante</h3>
-      <p>Favorisce l'eliminazione dei liquidi.</p>
-      <p><strong>€15</strong></p>
-      <button data-id="4" class="add-to-cart">Acquista</button>
+    <!-- intro -->
+    <section class="intro">
+        <div class="container">
+            <p class="intro-text">
+                Mexa Srl è specializzata in <strong>progetti elettrici</strong> e <strong> sviluppo software per automazione industriale</strong>,
+                con sede a Modena. Offriamo soluzioni su misura per ottimizzare processi e macchinari.
+            </p>
+        </div>
+    </section>
+
+    <!-- Servizi -->
+    <section id="servizi" class="section">
+        <div class="container">
+            <h2 class="section-title">Servizi</h2>
+            <p class="section-subtitle">
+                Supportiamo i <strong>progetti</strong> dei nostri clienti fin dalle prime fasi, con <strong>studi di fattibilità</strong> e soluzioni tecniche sviluppate da un <strong>team qualificato</strong>.
+                Attraverso <strong>aggiornamenti costanti</strong>, <strong>ricerca continua</strong> ed esperienza pratica, ottimizziamo <strong>tempi</strong> e <strong>costi</strong> garantendo la massima <strong>affidabilità</strong>.
+                I nostri servizi includono <strong>progettazione elettrica</strong>, <strong>schemi pneumatici</strong> e <strong>idraulici</strong>.
+            </p>
+
+            <div class="servizi-container">
+                <!-- Software su misura -->
+                <article class="servizi-item">
+                    <img src="/person.webp" alt="Automazione e software per impianti reali">
+                    <h3>Software su misura</h3>
+                    <p>
+                   <strong>Software</strong> per ogni esigenza: dai <strong>PLC</strong> dei principali marchi 
+                    (Siemens, Schneider, Rockwell, Omron) a <strong>soluzioni custom su PC</strong> 
+                     per controllo, supervisione e interfacce utente. 
+                     Realizziamo anche <strong>HMI avanzate</strong> e sistemi di <strong>supervisione 3D</strong>, 
+                     sviluppati con piattaforme innovative, per offrire un’esperienza di 
+                     monitoraggio intuitiva e immersiva.
+                    </p>
+
+                    <div class="servizi-cta">
+                        <a class="cta" href="#contatti">Parla con un esperto</a>
+                    </div>
+                </article>
+
+                <!-- Progettazione Elettrica -->
+                <article class="servizi-item">
+                    <img src="/elettrico(2).webp" alt="Progettazione elettrica">
+                    <h3>Progettazione Elettrica</h3>
+                    <p>Realizziamo <strong>progetti elettrici completi</strong>, sviluppati internamente
+                        con <strong>software all’avanguardia</strong> (SPAC Automazione ed EPLAN P8), garantendo <strong>schemi elettrici chiari</strong>, 
+                        <strong>sicuri</strong> e <strong>conformi alle normative</strong>.</p>
+                    <div class="servizi-cta">
+                        <a class="cta" href="#contatti">Parla con un esperto</a>
+                    </div>
+                </article>
+
+                <!-- Innovazione & Ricerca -->
+                <article class="servizi-item">
+                    <img src="/r&d.webp" alt="Innovazione & Ricerca">
+                    <h3>Innovazione & Ricerca</h3>
+                    <p>Investiamo in <strong> ricerca</strong> e <strong>sviluppo</strong> per offrire soluzioni 
+                      all’avanguardia per migliorare <strong>efficienza</strong>, <strong>sicurezza</strong> e <strong>sostenibilità</strong> nell’automazione.</p>
+                    <div class="servizi-cta">
+                        <a class="cta" href="#contatti">Parla con un esperto</a>
+                    </div>
+                </article>
+
+                <!-- Assistenza -->
+                <article class="servizi-item">
+                    <img src="/assistenza.webp" alt="Assistenza tecnica">
+                    <h3>Assistenza</h3>
+                    <p><strong>Supporto tecnico</strong> e <strong>miglioramento continuo</strong>, disponibili anche da remoto.</p>
+                    <div class="servizi-cta">
+                        <a class="cta" href="#contatti">Parla con un esperto</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <div class="spacer" aria-hidden="true"></div>
+
+    <!-- Chi Siamo -->
+    <section id="chi-siamo" class="about-section">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2>Chi Siamo</h2>
+                <p> Mexa nasce da oltre <strong>20 anni di esperienza</strong> nel settore
+                    dell’<strong>automazione industriale</strong>, con l’obiettivo di fornire <strong>soluzioni personalizzate</strong>
+                    e di qualità. </p>
+                <p> Supportiamo aziende strutturate integrando competenze in <strong>quadri elettrici</strong>, <strong>cablatura impianti</strong>, 
+                    <strong>programmazione PLC</strong> e <strong>sviluppo software su PC</strong>.</p>
+                <p>Il nostro approccio si basa su <strong>relazioni solide e durature</strong>, orientate a risultati concreti e alla piena soddisfazione del cliente.</p>
+            </div>
+            <div class="about-image">
+                <img src="/team.webp" alt="Team Mexa al lavoro">
+            </div>
+        </div>
+    </section>
+
+    <div class="spacer" aria-hidden="true"></div>
+
+    <!-- Numeri chiave -->
+    <section id="numeri" class="stats-section">
+        <div class="container">
+            <h2 class="section-title">Numeri chiave</h2>
+            <p class="section-subtitle">Alcune metriche che raccontano il nostro lavoro.</p>
+
+            <div class="stats-grid">
+                <article class="stat">
+                    <i class="fas fa-calendar-check stat-ico" aria-hidden="true"></i>
+                    <div class="stat-value" data-target="5">0</div>
+                    <div class="stat-label">Anni di esperienza</div>
+                </article>
+
+                <article class="stat">
+                    <i class="fas fa-industry stat-ico" aria-hidden="true"></i>
+                    <div class="stat-value" data-target="50">0</div>
+                    <div class="stat-label">Impianti realizzati</div>
+                </article>
+
+                <article class="stat">
+                    <i class="fas fa-microchip stat-ico" aria-hidden="true"></i>
+                    <div class="stat-value" data-target="118">0</div>
+                    <div class="stat-label">Progetti software</div>
+                </article>
+
+                <article class="stat">
+                    <i class="fas fa-headset stat-ico" aria-hidden="true"></i>
+                    <div class="stat-value" data-target="269">0</div>
+                    <div class="stat-label">Ticket gestiti nel 2025</div>
+                </article>
+            </div>
+        </div>
+        
+        <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const counters = document.querySelectorAll(".stat-value");
+  const speed = 60; // più basso = più veloce
+
+  const animateCounter = (counter) => {
+    const target = +counter.getAttribute("data-target");
+    let count = 0;
+    const step = Math.max(1, Math.floor(target / speed));
+
+    const update = () => {
+      count += step;
+      if (count >= target) {
+        counter.textContent = target;
+      } else {
+        counter.textContent = count;
+        requestAnimationFrame(update);
+      }
+    };
+    update();
+  };
+
+  // IntersectionObserver per avviare l'animazione solo quando la sezione è visibile
+  const section = document.querySelector("#numeri");
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        counters.forEach(counter => animateCounter(counter));
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  if (section) observer.observe(section);
+});
+</script>
+
+        
+    </section>
+
+    <div class="spacer" aria-hidden="true"></div>
+
+   <!-- Tecnologie -->
+<section id="tecnologie" class="tech-section">
+  <div class="container">
+    <h2 class="section-title">Tecnologie</h2>
+    <p class="section-subtitle">Utilizziamo strumenti e piattaforme leader in automazione e sviluppo software.</p>
+
+    <div class="tech-grid">
+      <div class="tech-item">
+        <img src="/1.webp" alt="Logo Siemens">
+        <span>PLC Siemens S7-1200/1500</span>
+      </div>
+      <div class="tech-item">
+        <img src="/2.webp" alt="Logo TIA Portal">
+        <span>TIA Portal V14-V20</span>
+      </div>
+      <div class="tech-item">
+        <img src="/3.webp" alt="HMI">
+        <span>HMI & SCADA<br></span><br>
+       
+      </div>
+      <div class="tech-item">
+        <img src="/4.webp" alt="Logo C Sharp">
+        <span>C#<br></span><br> 
+      </div>
+      <div class="tech-item">
+        <img src="/ux.webp" alt="Logo Unity">
+        <span>UI/UX interfaces</span>
+      </div>
+      <!-- web-cloud -->
+      <div class="tech-item">
+        <img src="/cloud.webp" alt="Logo cloud computing">
+        <span>Web & Cloud Integration</span>
+      </div>
     </div>
   </div>
 </section>
-<script src="cart.js"></script>
 
+    <div class="spacer" aria-hidden="true"></div>
 
-  
+<!-- Sezione Contatti -->
 
-<!-- prenotazioni -->
-<section id="prenotazione" class="booking">
-    <div class="booking-container">
-      <h2>Prenota il tuo Trattamento</h2>
-      <p>Compila il modulo per riservare il tuo momento di benessere.</p>
-      <form class="booking-form">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" placeholder="Inserisci il tuo nome" required>
-  
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Inserisci la tua email" required>
-  
-        <label for="trattamento">Seleziona Trattamento:</label>
-        <select id="trattamento" name="trattamento" required>
-          <option value="" disabled selected>-- Scegli un'opzione --</option>
-          <option value="massaggio-relax">Massaggio Relax</option>
-          <option value="sauna">Sauna</option>
-          <option value="bagno-turco">Bagno Turco</option>
-          <option value="aromaterapia">Aromaterapia</option>
-        </select>
-  
-        <label for="data">Data:</label>
-        <input type="date" id="data" name="data" required>
-  
-        <label for="ora">Ora:</label>
-        <input type="time" id="ora" name="ora" required>
-  
-        <button type="submit">Prenota Ora</button>
-      </form>
+<section id="contatti" class="contact-section">
+  <div class="container">
+    <h2 class="section-title invert">Contattaci</h2>
+    <p class="section-subtitle invert">
+      Vuoi parlarci del tuo progetto o richiedere una consulenza in
+      <strong>progettazione elettrica</strong>,
+      <strong>software per automazione</strong> o
+      <strong>realizzazione impianti</strong>? <br>
+      Scegli il canale qui sotto — ti ricontatteremo entro poche ore lavorative.
+    </p>
+
+    <div class="contact-container">
+  <!-- Card SX: Azioni di contatto -->
+  <div class="contact-card contact-form" aria-labelledby="contatta-title">
+    <h3 id="contatta-title">Scrivici o chiamaci</h3>
+    <p>Scegli il canale che preferisci per metterti subito in contatto con noi:</p>
+
+    <div class="contact-actions">
+      <a href="mailto:info@mexasrl.com" class="btn" aria-label="Scrivi una email a Mexa">
+        ✉️ Email
+      </a>
+      <a href="https://wa.me/393298972155" class="btn" target="_blank" rel="noopener"
+         aria-label="Chat WhatsApp con Mexa">
+        💬 WhatsApp
+      </a>
+      <a href="tel:+390598302654" class="btn" aria-label="Chiama Mexa al numero 059 8302654">
+        📞 Telefono
+      </a>
     </div>
-  </section>
+  </div>
+
+  <!-- Card DX: Info -->
+  <aside class="contact-card contact-info" aria-labelledby="info-title">
+    <h3 id="info-title">I nostri contatti</h3>
+
+    <p><strong>Email:</strong> <a href="mailto:info@mexasrl.com">info@mexasrl.com</a></p>
+    <p><strong>Telefono:</strong> <a href="tel:+390598302654">+39 059 8302654</a></p>
+    <p><strong>Orari di apertura:</strong> Lun–Ven: 8:30–17:30</p>
+    <p><strong>Ci trovi a:</strong><br>Via per Sassuolo 70/D<br>41043 Formigine (MO), Italia</p>
+
+    <h3>Seguici</h3>
+    <div class="social-icons" aria-label="Social media">
+      <a href="https://www.linkedin.com/company/esempio" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+    </div>
+  </aside>
+</div>
+
+<!-- Mappa sotto entrambe le colonne -->
+<div class="map-wrapper">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2793.777485494472!2d10.8405!3d44.5739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477fe71b57b59d4d%3A0x8a05b8c2fbb807a!2sVia%20per%20Sassuolo%2C%2070%2C%2041043%20Formigine%20MO!5e0!3m2!1sit!2sit!4v1695660000000!5m2!1sit!2sit" 
+    width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+
+
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container footer-grid">
+    <!-- Colonna 1: Brand / sede -->
+<div class="footer-col">
+  <a href="/" class="footer-brand" aria-label="Homepage Mexa">
+    <img src="/mexalogo.png" alt="MEXA" class="footer-logo">
+  </a>
+  <p class="footer-text">
+    Via per Sassuolo, 70/D 41043 Formigine (MO) – Italia<br>
+    P.IVA 04007440367
+  </p>
+  <div class="footer-social">
+    <a href="https://www.linkedin.com/company/esempio" target="_blank" aria-label="LinkedIn">
+      <i class="fab fa-linkedin"></i>
+    </a>
+    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+      <i class="fab fa-facebook"></i>
+    </a>
+  </div>
+</div>
+
+
+      <!-- Colonna 2: Contatti -->
+      <div class="footer-col">
+        <h5 class="footer-title">Contatti</h5>
+        <ul class="footer-list">
+          <li><a class="footer-link" href="mailto:info@mexasrl.com">info@mexasrl.com</a></li>
+          <li><a class="footer-link" href="tel:+390598302654">059 8302654</a></li>
+          <li><a class="footer-link" href="#contatti">Modulo contatti</a></li>
+        </ul>
+      </div>
+
+      <!-- Colonna 3: Link rapidi -->
+      <div class="footer-col">
+        <h5 class="footer-title">Link rapidi</h5>
+        <ul class="footer-list">
+          <li><a class="footer-link" href="#servizi">Servizi</a></li>
+          <li><a class="footer-link" href="#chi-siamo">Chi siamo</a></li>
+          <li><a class="footer-link" href="/privacy.html">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
   
 
-  <!-- Footer -->
-  <footer class="footer">
-    <p>Centro Wellness - Tutti i diritti riservati &copy; 2025</p>
-  </footer>
+  <div class="footer-bottom">
+    <div class="container footer-bottom-inner">
+      <span>© <span id="year"></span> Mexa Srl — Tutti i diritti riservati<br>
+      *Mexa Srl utilizza tecnologie di terze parti, senza che 
+      questo implichi alcuna affiliazione o partnership ufficiale con i rispettivi brand</br></span>
+    </div>
+  </div>
+</footer>
 
- <script src="script.js"></script> 
- 
+<script>
+  // anno automatico JS 
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
 
 </body>
 </html>
