@@ -57,7 +57,7 @@ p strong, p b{ color:var(--brand); font-weight:700; }
 
 /* Logo */
 .logo{
-  height: 170px;
+  height: 160px;
   width: auto;
   display:block;
 }
