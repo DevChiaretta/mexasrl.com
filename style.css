@@ -59,7 +59,7 @@ p strong, p b{ color:var(--brand); font-weight:700; }
 .logo{
   height: 160px;
   width: auto;
-  display:block;
+  display: block;
 }
 
 /* Switch lingua */
@@ -74,12 +74,12 @@ p strong, p b{ color:var(--brand); font-weight:700; }
 }
 .lang a:hover{ color: var(--brand); }
 
-/* Layout mobile: stack brand + lingua, riduci logo e font */
 @media (max-width: 560px){
-  .header-inner{ flex-direction: column; align-items: center; }
-  .logo{ height: 52px; }
-  .lang a{ font-size: 15px; }
+  .header-inner{ padding: 6px 0; }     /* riduco il padding per NON alzare l’header */
+  .header .logo{ height: 68px; }        /* logo più grande su mobile */
+  .lang a{ font-size: 18px; }           /* opzionale: lingua più leggibile */
 }
+
 
 /* Evita che l'hero “sali” sotto l’header sticky su mobile molto stretto */
 .hero{ padding: 100px 0; }
@@ -198,6 +198,7 @@ p strong, p b{ color:var(--brand); font-weight:700; }
 .tech-item span{
   display:-webkit-box;
   -webkit-line-clamp:2;           /* limite a 2 righe */
+  line-clamp:2;                   /* standard property for compatibility */
   -webkit-box-orient:vertical;
   overflow:hidden;
   min-height:2.6em;               /* spazio identico per 2 righe */
