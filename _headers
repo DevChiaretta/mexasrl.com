@@ -1,17 +1,17 @@
 /*
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
   Content-Security-Policy: default-src 'self';
-    object-src 'none';
-    base-uri 'self';
-    frame-ancestors 'none';
-    script-src 'self' https://cdnjs.cloudflare.com;
-    style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com;
-    font-src 'self' https://cdnjs.cloudflare.com data:;
-    img-src 'self' data: https:;
-    connect-src 'self';
-    frame-src 'self' https://*.google.com https://*.gstatic.com;
-    form-action 'self';
-    upgrade-insecure-requests;
+  Content-Security-Policy: object-src 'none';
+  Content-Security-Policy: base-uri 'self';
+  Content-Security-Policy: frame-ancestors 'none';
+  Content-Security-Policy: script-src 'self' https://cdnjs.cloudflare.com;
+  Content-Security-Policy: style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com;
+  Content-Security-Policy: font-src 'self' https://cdnjs.cloudflare.com data:;
+  Content-Security-Policy: img-src 'self' data: https://maps.gstatic.com https://maps.googleapis.com https://*.ggpht.com https://lh3.googleusercontent.com;
+  Content-Security-Policy: connect-src 'self' https://maps.googleapis.com;
+  Content-Security-Policy: frame-src 'self' https://www.google.com https://maps.googleapis.com https://*.gstatic.com;
+  Content-Security-Policy: form-action 'self';
+  Content-Security-Policy: upgrade-insecure-requests
   X-Content-Type-Options: nosniff
   Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: geolocation=(), microphone=(), camera=(); */
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
