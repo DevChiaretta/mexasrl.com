@@ -1,1 +1,8 @@
-/*    /index.html   200
+# Canonical host
+https://mexasrl.netlify.app/*   https://mexasrl.com/:splat   301!
+https://www.mexasrl.com/*       https://mexasrl.com/:splat   301!
+
+# Opzionale (solo se un domani diventa SPA):
+# /assets/*   /assets/:splat   200!
+# /images/*   /images/:splat   200!
+# /fonts/*    /fonts/:splat    200!
