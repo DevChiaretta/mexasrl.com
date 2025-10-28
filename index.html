@@ -2,20 +2,26 @@
 <html lang="it">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mexa Srl — Automazione Industriale & Software</title>
-    <meta name="description" content="Mexa Srl: soluzioni di automazione industriale, software su misura e assistenza tecnica.">
-    <link rel="alternate" hreflang="it" href="https://mexa.com/">
-    <link rel="alternate" hreflang="en" href="https://mexa.it/en/">
-    <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="preload" as="image"
-    href="/img/assistenza-800.webp"
-    imagesrcset="/img/assistenza-400.webp 400w, /img/assistenza-800.webp 800w, /img/assistenza-1200.webp 1200w"
-    imagesizes="(max-width: 768px) 100vw, 379px"
-    fetchpriority="high">
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mexa Srl — Automazione Industriale & Software</title>
+<meta name="description" content="Mexa Srl: soluzioni di automazione industriale, software su misura e assistenza tecnica.">
+<!-- Allineiamo gli hreflang al dominio .it -->
+<link rel="alternate" hreflang="it" href="https://mexa.it/">
+<link rel="alternate" hreflang="en" href="https://mexa.it/en/">
+<link rel="canonical" href="https://mexa.it/">
+<link rel="stylesheet" href="/style.css">
+<link rel="preload" as="image"
+      href="/img/hero-1280.webp"
+      imagesrcset="/img/hero-768.webp 768w, /img/hero-1280.webp 1280w, /img/hero-1920.webp 1920w"
+      imagesizes="100vw"
+      fetchpriority="high">
+<!-- Font Awesome (opzionale, non-bloccante) -->
+<!--
+<link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
+-->
 </head>
 
 <body>
@@ -23,9 +29,8 @@
   <div class="container header-inner">
     <div class="brand">
     <a href="/" class="logo-box">
-  <img src="MEXA S.r.l..svg" alt="Mexa Srl- Mexa Srl company logo with bold modern lettering on a white background, conveying a professional and innovative atmosphere">
-</a>
-
+      <img src="MEXA S.r.l..svg" alt="Mexa Srl- Mexa Srl company logo with bold modern lettering on a white background, conveying a professional and innovative atmosphere">
+    </a>
     </div>
     <nav class="lang" aria-label="Lingua">
       <a href="/">IT</a> | <a href="/en/">EN</a>
@@ -33,12 +38,22 @@
   </div>
 </header>
 
-    <section class="hero" role="banner">
-        <div class="container">
-            <h1>Innovazione & Automazione Industriale</h1>
-            <a class="cta" href="https://wa.me/393206438978" target="_blank" rel="noopener">Richiedi una consulenza</a>
-        </div>
-    </section>
+<section class="hero" role="banner" aria-label="Automazione industriale Mexa">
+  <img
+    class="hero__bg"
+    src="/img/hero-1280.webp"
+    srcset="/img/hero-768.webp 768w, /img/hero-1280.webp 1280w, /img/hero-1920.webp 1920w"
+    sizes="100vw"
+    alt="mexasrl - esperti in automazione Industriale" aria-hidden="true"
+    width="1280" height="720"
+    decoding="async" loading="eager" fetchpriority="high"
+  />
+  <div class="container">
+    <h1>Innovazione & Automazione Industriale</h1>
+    <a class="cta" href="https://wa.me/393206438978" target="_blank" rel="noopener">Richiedi una consulenza</a>
+  </div>
+</section>
+
 
     <div class="spacer" aria-hidden="true"></div>
 
@@ -65,12 +80,11 @@
             <div class="servizi-container">
                 <!-- Software su misura -->
                 <article class="servizi-item">
-                    <img src="/person.webp" alt="Automazione e software per impianti reali" 
+                    <img src="/img/person.webp" alt="Automazione e software per impianti reali" 
                      srcset="/img/person-400.webp 400w, /img/person-800.webp 800w, /img/person-1200.webp 1200w"
                       sizes="(max-width: 768px) 100vw, 379px"
                       width="379" height="379"
-                      alt="Automazione e software per impianti reali"
-                      decoding="async" loading="lazy">>
+                      decoding="async" loading="lazy">
                     <h3>Software su misura</h3>
                     <p>
                    <strong>Software</strong> per ogni esigenza: dai <strong>PLC</strong> dei principali marchi 
@@ -89,18 +103,15 @@
                 <!-- Progettazione Elettrica -->
                 <article class="servizi-item">
                     <img src="/elettrico(2).webp" alt="Progettazione elettrica"
-                      
-                      sizes="(max-width: 768px) 100vw, 379px"
-                      width="379" height="213"
-                      alt="Progettazione elettrica"
-                      decoding="async" loading="lazy">
->
+                    sizes="(max-width: 768px) 100vw, 379px"
+                    width="379" height="213
+                    decoding="async loading="lazy">
                     <h3>Progettazione Elettrica</h3>
                     <p>Realizziamo <strong>progetti elettrici completi</strong>, sviluppati internamente
-                        con <strong>software all’avanguardia</strong> (SPAC Automazione ed EPLAN P8), garantendo <strong>schemi elettrici chiari</strong>, 
-                        <strong>sicuri</strong> e <strong>conformi alle normative</strong>.</p>
+                    con <strong>software all’avanguardia</strong> (SPAC Automazione ed EPLAN P8), garantendo <strong>schemi elettrici chiari</strong>, 
+                    <strong>sicuri</strong> e <strong>conformi alle normative</strong>.</p>
                     <div class="servizi-cta">
-                        <a class="cta" href="#contatti">Parla con un esperto</a>
+                     <a class="cta" href="#contatti">Parla con un esperto</a>
                     </div>
                 </article>
 
@@ -110,8 +121,7 @@
                     
                     sizes="(max-width: 768px) 100vw, 379px"
                     width="379" height="213"
-                    alt="Innovazione & Ricerca"
-                    decoding="async" loading="lazy">>
+                    decoding="async" loading="lazy">
                     <h3>Innovazione & Ricerca</h3>
                     <p>Investiamo in <strong> ricerca</strong> e <strong>sviluppo</strong> per offrire soluzioni 
                       all’avanguardia per migliorare <strong>efficienza</strong>, <strong>sicurezza</strong> e <strong>sostenibilità</strong> nell’automazione.</p>
@@ -122,16 +132,15 @@
 
                 <!-- Assistenza -->
                 <article class="servizi-item">
-                    <img src="/assistenza.webp" alt="Assistenza tecnica"
+                    <img src="/img/assistenza.webp" alt="Assistenza tecnica"
                     srcset="/img/assistenza-400.webp 400w, /img/assistenza-800.webp 800w, /img/assistenza-1200.webp 1200w"
                     sizes="(max-width: 768px) 100vw, 379px"
                     width="379" height="213"
-                    alt="Assistenza tecnica"
-                    decoding="async" loading="lazy">>
+                    decoding="async" loading="lazy">
                     <h3>Assistenza</h3>
                     <p><strong>Supporto tecnico</strong> e <strong>miglioramento continuo</strong>, disponibili anche da remoto.</p>
                     <div class="servizi-cta">
-                        <a class="cta" href="#contatti">Parla con un esperto</a>
+                       <a class="cta" href="#contatti">Parla con un esperto</a>
                     </div>
                 </article>
             </div>
@@ -153,10 +162,9 @@
                 <p>Il nostro approccio si basa su <strong>relazioni solide e durature</strong>, orientate a risultati concreti e alla piena soddisfazione del cliente.</p>
             </div>
             <div class="about-image">
-                <img src="/team.webp" alt="Team Mexa al lavoro"
+                <img src="/img/team.webp" alt="Team Mexa al lavoro"
                   srcset="/img/team-400.webp 400w, /img/team-800.webp 800w, /img/team-1200.webp 1200w"
                   sizes="(max-width: 768px) 100vw, 560px"
-                  alt="Team Mexa al lavoro"
                   decoding="async" loading="lazy">
             </div>
         </div>
@@ -254,122 +262,111 @@
     <div class="tech-grid">
 
       <div class="tech-item">
-        <img src="/6.webp" alt="Logo Siemens - Mexa Srl utilizza tecnologie di terze parti, senza che 
+        <img src="/img/6.webp" alt="Logo Siemens - Mexa Srl utilizza tecnologie di terze parti, senza che 
          questo implichi alcuna affiliazione o partnership ufficiale con i rispettivi brand"
       
         srcset="/img/6-80.webp 80w, /img/6-160.webp 160w, /img/6-320.webp 320w"
         sizes="80px"
         width="80" height="80"
-      
         decoding="async" loading="lazy">
-
         <span>PLC Siemens S7-1200/1500</span>
       </div>
 
       <div class="tech-item">
-        <img src="/9.webp" alt="Logo TIA Portal - Mexa Srl utilizza tecnologie di terze parti, senza che 
+        <img src="/img/9.webp" alt="Logo TIA Portal - Mexa Srl utilizza tecnologie di terze parti, senza che 
         questo implichi alcuna affiliazione o partnership ufficiale con i rispettivi brand"
         srcset="/img/9-80.webp 80w, /img/9-160.webp 160w, /img/9-320.webp 320w"
         sizes="80px"
         width="80" height="80"
-        
         decoding="async" loading="lazy">
         <span>TIA Portal V14-V20</span>
       </div>
 
       <div class="tech-item">
-        <img src="/1.webp" alt="logo weintek - Mexa Srl utilizza tecnologie di terze parti, senza che 
+        <img src="/img/1.webp" alt="logo weintek - Mexa Srl utilizza tecnologie di terze parti, senza che 
       questo implichi alcuna affiliazione o partnership ufficiale con i rispettivi brand"
         srcset="/img/1-80.webp 80w, /img/1-160.webp 160w, /img/1-320.webp 320w"
         sizes="80px"
         width="80" height="80"
-       
         decoding="async" loading="lazy">
         <span><br>HMI & SCADA</span><br>
-       
-      </div>
+       </div>
+
       <div class="tech-item">
-        <img src="/2.webp" alt="Logo C Sharp - Mexa Srl utilizza tecnologie di terze parti, senza che 
+        <img src="/img/2.webp" alt="Logo C Sharp - Mexa Srl utilizza tecnologie di terze parti, senza che 
       questo implichi alcuna affiliazione o partnership ufficiale con i rispettivi brand"
         srcset="/img/2-80.webp 80w, /img/2-160.webp 160w, /img/2-320.webp 320w"
         sizes="80px"
         width="80" height="80"
-   
-        decoding="async" loading="lazy">>
+        decoding="async" loading="lazy">
          <span><br>C#</span><br>
       </div>
 
       <div class="tech-item">
-        <img src="/UX.webp" alt="Logo UX - Mexa srl sviluppa interfacce user friendly e intuitive per migliorare l'esperienza utente"
+        <img src="/img/UX.webp" alt="Logo UX - Mexa srl sviluppa interfacce user friendly e intuitive per migliorare l'esperienza utente"
           sizes="80px"
           width="80" height="80"
-          
          decoding="async" loading="lazy">
         <span>UI/UX interfaces</span>
       </div>
      
       <div class="tech-item">
-        <img src="/8.webp" alt="Logo cloud computing - Mexa Srl sviluppa ed integra soluzioni cloud per l'automazione industriale"
+        <img src="/img/8.webp" alt="Logo cloud computing - Mexa Srl sviluppa ed integra soluzioni cloud per l'automazione industriale"
           sizes="80px"
           width="80" height="80"
-          
           decoding="async" loading="lazy">
         <span>Web & Cloud Integration</span>
       </div>
 
       <div class="tech-item">
-        <img src="/3.webp" alt="Logo Spac - Mexa Srl utilizza tecnologie di terze parti, senza che 
+        <img src="/img/3.webp" alt="Logo Spac - Mexa Srl utilizza tecnologie di terze parti, senza che 
       questo implichi alcuna affiliazione o partnership ufficiale con i rispettivi brand"
         sizes="80px"
         width="80" height="80"
-        
         decoding="async" loading="lazy">
         <span>Spac Automazione</span>
       </div>
 
       <div class="tech-item">
-        <img src="/7.webp" alt="Logo Omron - Mexa Srl utilizza tecnologie di terze parti, senza che 
+        <img src="/img/7.webp" alt="Logo Omron - Mexa Srl utilizza tecnologie di terze parti, senza che 
       questo implichi alcuna affiliazione o partnership ufficiale con i rispettivi brand"
         sizes="80px"
         width="80" height="80"
-        
         decoding="async" loading="lazy">
         <span>Omron & CX Program</span>
       </div>
 
       <div class="tech-item">
-        <img src="/4.webp" alt="Logo Eplan - Mexa Srl utilizza tecnologie di terze parti, senza che 
+        <img src="/img/4.webp" alt="Logo Eplan - Mexa Srl utilizza tecnologie di terze parti, senza che 
       questo implichi alcuna affiliazione o partnership ufficiale con i rispettivi brand"
         sizes="80px"
         width="80" height="80"
-        
         decoding="async" loading="lazy">
         <span>Eplan</span>
       </div>
 
       <div class="tech-item">
-        <img src="/5.webp" alt="Logo Codesys -Mexa Srl utilizza tecnologie di terze parti, senza che 
+        <img src="/img/5.webp" alt="Logo Codesys -Mexa Srl utilizza tecnologie di terze parti, senza che 
       questo implichi alcuna affiliazione o partnership ufficiale con i rispettivi brand"
         sizes="80px"
         width="80" height="80"
-        
         decoding="async" loading="lazy">
         <span>Codesys</span>
       </div>
 
       <div class="tech-item">
        <img
-  src="/img/11-80.webp"
-  srcset="/img/11-80.webp 80w, /img/11-160.webp 160w, /img/11-320.webp 320w"
-  sizes="80px"
-  width="80" height="80"
-  alt="Mexa Srl sviluppa soluzioni CRM e applicazioni su misura per l'automazione industriale"
-  decoding="async" loading="lazy">
-
+          src="/img/11-80.webp"
+          srcset="/img/11-80.webp 80w, /img/11-160.webp 160w, /img/11-320.webp 320w"
+          sizes="80px"
+          width="80" height="80"
+          alt="Mexa Srl sviluppa soluzioni CRM e applicazioni su misura per l'automazione industriale"
+          decoding="async" loading="lazy">
         <span>CRM & App su misura</span>
       </div>
     </div>
   </div>
+
 </section>
     <div class="spacer" aria-hidden="true"></div>
 
