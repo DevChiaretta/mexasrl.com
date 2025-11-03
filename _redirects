@@ -1,6 +1,14 @@
-# Canonical host
-https://mexasrl.netlify.app/*   https://mexasrl.com/:splat   301!
-https://www.mexasrl.com/*       https://mexasrl.com/:splat   301!
+# Forza HTTPS
+http://*       https://:splat 301!
+
+# Forza dominio canonico (apex, senza www)
+https://www.mexasrl.com/*  https://mexasrl.com/:splat 301!
+
+# Reindirizza il vecchio dominio .it al .com
+http://mexa.it/*           https://mexasrl.com/:splat 301!
+https://mexa.it/*          https://mexasrl.com/:splat 301!
+https://www.mexa.it/*      https://mexasrl.com/:splat 301!
+
 
 # Opzionale (solo se un domani diventa SPA):
 # /assets/*   /assets/:splat   200!
